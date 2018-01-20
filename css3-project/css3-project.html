@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style type="text/css">
+        #wrapper {
+            height: 1100px;
+            background: linear-gradient(gray, black);
+        }
+
+        #header {
+            width: 1000px;
+            height: 100px;
+            background-image: url("hk.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+            margin: auto;
+            box-shadow: 0px 0px 25px #ffffff;
+
+        }
+
+        #headergradient {
+            width: 1000px;
+            height: 100px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        }
+
+        #main {
+            width: 1000px;
+            height: 1000px;
+            background-color: #202328;
+            margin: auto;
+            box-shadow: 0px 0px 25px #ffffff;
+            position: relative;
+            top: 50px;
+        }
+
+        #contentwrapper {
+            width: 900px;
+            height: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            color: white;
+            padding-top: 50px;
+        }
+
+        #img {
+            transform: rotate(180deg)
+        }
+        
+        /*transformations for moving right on hover */
+        #oldnail {
+            position: relative;
+            left: 0px;
+            transition: left 4s;
+        }
+        
+        #oldnail:hover {
+            left: 300px;
+        }
+        
+        #sharpenednail {
+            position: relative;
+            left: 0px;
+            transition: left 4s;
+        }
+        
+        #oldnail:hover {
+            left: 300px;
+        }
+        
+        /* animations for sliding right infinitely */
+        #channelednail {
+            animation-name: slide;
+            position: relative;
+            left: 0px;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        #coilednail {
+            animation-name: slide;
+            position: relative;
+            left: 0px;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        #purenail {
+            animation-name: slide;
+            position: relative;
+            left: 0px;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes slide {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 300px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="headergradient">
+
+            </div>
+        </div>
+        <div id="main">
+            <div id="contentwrapper">
+                <h1>Home</h1>
+                <hr>
+                <img src="oldnail.png" alt="oldnail" id="oldnail">
+                <br>
+                <img src="sharpenednail.png" alt="sharpenednail" id="sharpenednail">
+                <br>
+                <img src="channelednail.png" alt="channelednail" id="channelednail">
+                <br>
+                <img src="coilednail.png" alt="coilednail" id="coilednail">
+                <br>
+                <img src="purenail.png" alt="purenail" id="purenail">
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
